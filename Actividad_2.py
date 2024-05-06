@@ -77,8 +77,7 @@ def chunks_and_document(txt):
 def load_llm(tokens, temp):
   
     llm = CTransformers(
-        #model=r"/workspaces/actividad-2-tdaabd/Actividad_2/llama-2-7b-chat.ggmlv3.q2_K.bin",
-	model=f"https://github.com/jalaves/actividad-2-tdaabd/blob/main/Actividad_2/llama-2-7b-chat.ggmlv3.q2_K.bin",
+        model=r"/workspaces/actividad-2-tdaabd/Actividad_2/llama-2-7b-chat.ggmlv3.q2_K.bin",
         model_type="llama",
           max_new_tokens = tokens,
         temperature = temp )
